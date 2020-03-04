@@ -1,0 +1,12 @@
+version: '3'
+services:
+        app:
+                image: fellows
+                build: .
+                ports:
+                - "8080:80"
+                tty: true
+                volumes:
+                  - .:/go/src/github.com/deBroglieeeen/fellows
+                # デフォルトのコマンドを変える　ホットリロードを有効にする？
+                #command: realize start --run --no-config
