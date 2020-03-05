@@ -4,7 +4,7 @@ services:
                 image: fellows
                 build: .
                 ports:
-                - "8080:80"
+                - "8080:8080"
                 tty: true
                 volumes:
                   - .:/go/src/github.com/deBroglieeeen/fellows
